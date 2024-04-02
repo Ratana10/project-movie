@@ -19,7 +19,7 @@ const imgUrl = computed(() => {
 </script>
 <template>
   <div class="">
-    <NuxtLink to="/movies/123">
+    <NuxtLink :to="`/movies/${movie?.id}`">
       <img
         class="hover:opacity-75 transition ease-in-out duration-150"
         :src="imgUrl"

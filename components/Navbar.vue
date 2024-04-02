@@ -5,8 +5,8 @@
     </div>
     <ul class="flex mt-5 gap-5 ml-5">
       <li>
-        <NuxtLink class="">
-          Movies
+        <NuxtLink to="/movies/popular" class="uppercase">
+          Popular
         </NuxtLink>
       </li>
       <li>
