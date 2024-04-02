@@ -1,9 +1,8 @@
 export default defineEventHandler((event)=>{
-  const {page} = getQuery(event);
 
   const config = useRuntimeConfig();
 
-  return $fetch(`${config.apiBaseUrl}/movie/now_playing?page=${page}`,{
+  return $fetch(`${config.apiBaseUrl}/movie/upcoming`,{
     method: "GET",
     headers: {
       'Authorization': `Bearer ${config.apiKey}`
